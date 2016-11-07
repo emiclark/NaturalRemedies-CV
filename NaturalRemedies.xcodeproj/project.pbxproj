@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D58D061DCFA933009D386B /* CollectionViewCellA.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D58D041DCFA933009D386B /* CollectionViewCellA.m */; };
+		00D58D071DCFA933009D386B /* CollectionViewCellA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D58D051DCFA933009D386B /* CollectionViewCellA.xib */; };
+		AAEF40B01DCD206B00B462FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF40AF1DCD206B00B462FA /* main.m */; };
+		AAEF40B31DCD206B00B462FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF40B21DCD206B00B462FA /* AppDelegate.m */; };
+		AAEF40B91DCD206B00B462FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEF40B71DCD206B00B462FA /* Main.storyboard */; };
+		AAEF40BB1DCD206B00B462FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEF40BA1DCD206B00B462FA /* Assets.xcassets */; };
+		AAEF40BE1DCD206B00B462FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEF40BC1DCD206B00B462FA /* LaunchScreen.storyboard */; };
+		AAEF40D31DCD2BA800B462FA /* deleteIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AAEF40CF1DCD2BA800B462FA /* deleteIcon.png */; };
+		AAEF40D41DCD2BA800B462FA /* studyIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAEF40D01DCD2BA800B462FA /* studyIcon.jpg */; };
+		AAEF40D51DCD2BA800B462FA /* sleepIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAEF40D11DCD2BA800B462FA /* sleepIcon.jpg */; };
+		AAEF40D61DCD2BA800B462FA /* stressReduction.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAEF40D21DCD2BA800B462FA /* stressReduction.jpg */; };
+		AAEF40DA1DCD2E2A00B462FA /* AilmentCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF40D91DCD2E2A00B462FA /* AilmentCollectionViewController.m */; };
+		AAEF40DE1DCD2EAF00B462FA /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF40DD1DCD2EAF00B462FA /* DAO.m */; };
+		AAEF40E21DCD2EFA00B462FA /* Ailment.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF40E11DCD2EFA00B462FA /* Ailment.m */; };
+		AAEF40E61DCD2F3400B462FA /* Remedies.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF40E51DCD2F3400B462FA /* Remedies.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00D58D031DCFA933009D386B /* CollectionViewCellA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCellA.h; sourceTree = "<group>"; };
+		00D58D041DCFA933009D386B /* CollectionViewCellA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCellA.m; sourceTree = "<group>"; };
+		00D58D051DCFA933009D386B /* CollectionViewCellA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCellA.xib; sourceTree = "<group>"; };
+		AAEF40AB1DCD206B00B462FA /* NaturalRemedies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaturalRemedies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEF40AF1DCD206B00B462FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAEF40B11DCD206B00B462FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAEF40B21DCD206B00B462FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAEF40B81DCD206B00B462FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAEF40BA1DCD206B00B462FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAEF40BD1DCD206B00B462FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAEF40BF1DCD206C00B462FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAEF40CF1DCD2BA800B462FA /* deleteIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deleteIcon.png; sourceTree = "<group>"; };
+		AAEF40D01DCD2BA800B462FA /* studyIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = studyIcon.jpg; sourceTree = "<group>"; };
+		AAEF40D11DCD2BA800B462FA /* sleepIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sleepIcon.jpg; sourceTree = "<group>"; };
+		AAEF40D21DCD2BA800B462FA /* stressReduction.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stressReduction.jpg; sourceTree = "<group>"; };
+		AAEF40D81DCD2E2A00B462FA /* AilmentCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AilmentCollectionViewController.h; path = NaturalRemedies/AilmentCollectionViewController.h; sourceTree = "<group>"; };
+		AAEF40D91DCD2E2A00B462FA /* AilmentCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AilmentCollectionViewController.m; path = NaturalRemedies/AilmentCollectionViewController.m; sourceTree = "<group>"; };
+		AAEF40DC1DCD2EAF00B462FA /* DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAO.h; path = NaturalRemedies/DAO.h; sourceTree = "<group>"; };
+		AAEF40DD1DCD2EAF00B462FA /* DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAO.m; path = NaturalRemedies/DAO.m; sourceTree = "<group>"; };
+		AAEF40E01DCD2EFA00B462FA /* Ailment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ailment.h; path = NaturalRemedies/Ailment.h; sourceTree = "<group>"; };
+		AAEF40E11DCD2EFA00B462FA /* Ailment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ailment.m; path = NaturalRemedies/Ailment.m; sourceTree = "<group>"; };
+		AAEF40E41DCD2F3400B462FA /* Remedies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Remedies.h; path = NaturalRemedies/Remedies.h; sourceTree = "<group>"; };
+		AAEF40E51DCD2F3400B462FA /* Remedies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Remedies.m; path = NaturalRemedies/Remedies.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAEF40A81DCD206B00B462FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAEF40A21DCD206B00B462FA = {
+			isa = PBXGroup;
+			children = (
+				AAEF40AD1DCD206B00B462FA /* NaturalRemedies */,
+				AAEF40AC1DCD206B00B462FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAEF40AC1DCD206B00B462FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF40AB1DCD206B00B462FA /* NaturalRemedies.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAEF40AD1DCD206B00B462FA /* NaturalRemedies */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF40B11DCD206B00B462FA /* AppDelegate.h */,
+				AAEF40B21DCD206B00B462FA /* AppDelegate.m */,
+				AAEF40B71DCD206B00B462FA /* Main.storyboard */,
+				AAEF40DF1DCD2EB500B462FA /* DAO */,
+				AAEF40E31DCD2EFF00B462FA /* Ailment */,
+				AAEF40E71DCD2F4600B462FA /* Remedy */,
+				AAEF40CD1DCD22BF00B462FA /* CollectionViewCell-A */,
+				AAEF40DB1DCD2E2F00B462FA /* AilmentCVC */,
+				AAEF40BA1DCD206B00B462FA /* Assets.xcassets */,
+				AAEF40D71DCD2BB500B462FA /* images */,
+				AAEF40BC1DCD206B00B462FA /* LaunchScreen.storyboard */,
+				AAEF40BF1DCD206C00B462FA /* Info.plist */,
+				AAEF40AE1DCD206B00B462FA /* Supporting Files */,
+			);
+			path = NaturalRemedies;
+			sourceTree = "<group>";
+		};
+		AAEF40AE1DCD206B00B462FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF40AF1DCD206B00B462FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAEF40CD1DCD22BF00B462FA /* CollectionViewCell-A */ = {
+			isa = PBXGroup;
+			children = (
+				00D58D031DCFA933009D386B /* CollectionViewCellA.h */,
+				00D58D041DCFA933009D386B /* CollectionViewCellA.m */,
+				00D58D051DCFA933009D386B /* CollectionViewCellA.xib */,
+			);
+			name = "CollectionViewCell-A";
+			sourceTree = "<group>";
+		};
+		AAEF40D71DCD2BB500B462FA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF40CF1DCD2BA800B462FA /* deleteIcon.png */,
+				AAEF40D01DCD2BA800B462FA /* studyIcon.jpg */,
+				AAEF40D11DCD2BA800B462FA /* sleepIcon.jpg */,
+				AAEF40D21DCD2BA800B462FA /* stressReduction.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		AAEF40DB1DCD2E2F00B462FA /* AilmentCVC */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF40D81DCD2E2A00B462FA /* AilmentCollectionViewController.h */,
+				AAEF40D91DCD2E2A00B462FA /* AilmentCollectionViewController.m */,
+			);
+			name = AilmentCVC;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AAEF40DF1DCD2EB500B462FA /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF40DC1DCD2EAF00B462FA /* DAO.h */,
+				AAEF40DD1DCD2EAF00B462FA /* DAO.m */,
+			);
+			name = DAO;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AAEF40E31DCD2EFF00B462FA /* Ailment */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF40E01DCD2EFA00B462FA /* Ailment.h */,
+				AAEF40E11DCD2EFA00B462FA /* Ailment.m */,
+			);
+			name = Ailment;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AAEF40E71DCD2F4600B462FA /* Remedy */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF40E41DCD2F3400B462FA /* Remedies.h */,
+				AAEF40E51DCD2F3400B462FA /* Remedies.m */,
+			);
+			name = Remedy;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAEF40AA1DCD206B00B462FA /* NaturalRemedies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEF40C21DCD206C00B462FA /* Build configuration list for PBXNativeTarget "NaturalRemedies" */;
+			buildPhases = (
+				AAEF40A71DCD206B00B462FA /* Sources */,
+				AAEF40A81DCD206B00B462FA /* Frameworks */,
+				AAEF40A91DCD206B00B462FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NaturalRemedies;
+			productName = NaturalRemedies;
+			productReference = AAEF40AB1DCD206B00B462FA /* NaturalRemedies.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAEF40A31DCD206B00B462FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Richard Wells";
+				TargetAttributes = {
+					AAEF40AA1DCD206B00B462FA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6F8P242K3J;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AAEF40A61DCD206B00B462FA /* Build configuration list for PBXProject "NaturalRemedies" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAEF40A21DCD206B00B462FA;
+			productRefGroup = AAEF40AC1DCD206B00B462FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAEF40AA1DCD206B00B462FA /* NaturalRemedies */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAEF40A91DCD206B00B462FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEF40D51DCD2BA800B462FA /* sleepIcon.jpg in Resources */,
+				AAEF40BE1DCD206B00B462FA /* LaunchScreen.storyboard in Resources */,
+				AAEF40BB1DCD206B00B462FA /* Assets.xcassets in Resources */,
+				AAEF40D61DCD2BA800B462FA /* stressReduction.jpg in Resources */,
+				AAEF40D31DCD2BA800B462FA /* deleteIcon.png in Resources */,
+				AAEF40B91DCD206B00B462FA /* Main.storyboard in Resources */,
+				AAEF40D41DCD2BA800B462FA /* studyIcon.jpg in Resources */,
+				00D58D071DCFA933009D386B /* CollectionViewCellA.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAEF40A71DCD206B00B462FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D58D061DCFA933009D386B /* CollectionViewCellA.m in Sources */,
+				AAEF40E21DCD2EFA00B462FA /* Ailment.m in Sources */,
+				AAEF40DE1DCD2EAF00B462FA /* DAO.m in Sources */,
+				AAEF40B31DCD206B00B462FA /* AppDelegate.m in Sources */,
+				AAEF40B01DCD206B00B462FA /* main.m in Sources */,
+				AAEF40E61DCD2F3400B462FA /* Remedies.m in Sources */,
+				AAEF40DA1DCD2E2A00B462FA /* AilmentCollectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AAEF40B71DCD206B00B462FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAEF40B81DCD206B00B462FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAEF40BC1DCD206B00B462FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAEF40BD1DCD206B00B462FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAEF40C01DCD206C00B462FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAEF40C11DCD206C00B462FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAEF40C31DCD206C00B462FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6F8P242K3J;
+				INFOPLIST_FILE = NaturalRemedies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.turntotech.tutorial.NaturalRemedies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AAEF40C41DCD206C00B462FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6F8P242K3J;
+				INFOPLIST_FILE = NaturalRemedies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.turntotech.tutorial.NaturalRemedies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAEF40A61DCD206B00B462FA /* Build configuration list for PBXProject "NaturalRemedies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEF40C01DCD206C00B462FA /* Debug */,
+				AAEF40C11DCD206C00B462FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAEF40C21DCD206C00B462FA /* Build configuration list for PBXNativeTarget "NaturalRemedies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEF40C31DCD206C00B462FA /* Debug */,
+				AAEF40C41DCD206C00B462FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAEF40A31DCD206B00B462FA /* Project object */;
+}

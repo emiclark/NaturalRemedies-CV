@@ -33,10 +33,16 @@ UIBarButtonItem *editButton;
     // add edit Button
     editButton = [[UIBarButtonItem alloc] initWithTitle:@"Delete" style:UIBarButtonItemStylePlain target:self action: @selector(DeleteButtonTapped:)];
     
-    self.navigationItem.rightBarButtonItem = editButton;
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonTapped:)];
+    self.navigationItem.rightBarButtonItems = @[addButton, editButton];
     
     // hide delete button icon
     [self setEditing:NO];
+}
+
+- (void) addButtonTapped: (id*)sender {
+    self.addAilmentVC = [[AddAilmentViewController alloc] initWithNibName:@"AddAilmentViewController" bundle:nil];
+    [self.navigationController pushViewController:self.addAilmentVC animated:YES];
 }
 
 - (void) viewWillAppear:(BOOL)animated  {

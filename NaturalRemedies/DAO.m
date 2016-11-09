@@ -56,9 +56,9 @@ static DAO *sharedMyManager = nil;
     
     
     
-    Ailment *a1 = [[Ailment alloc] initWithName:@"Stress Reduction" andDescription:@"Adaptogens" andImage:@"stressReduction.jpg"];
-    Ailment *a2 = [[Ailment alloc] initWithName:@"Focus and Study" andDescription:@"Cognitive support, memory retention" andImage:@"studyIcon.jpg"];
-    Ailment *a3 = [[Ailment alloc] initWithName:@"Relaxation and Sleep" andDescription:@"Quieting racing thoughts, Insomnia" andImage:@"sleepIcon.jpg"];
+    Ailment *a1 = [[Ailment alloc] initWithName:@"Stress Reduction" andImage:@"stressReduction.jpg"];
+    Ailment *a2 = [[Ailment alloc] initWithName:@"Focus and Study" andImage:@"studyIcon.jpg"];
+    Ailment *a3 = [[Ailment alloc] initWithName:@"Relaxation and Sleep" andImage:@"sleepIcon.jpg"];
     
     Remedy *r1 = [[Remedy alloc] initWithName: @"Meditation" andDescription:@"Meditation" andType:@"Meditation" andURL:@"https://www.gaiam.com/discover/313/article/calming-mind-meditation-exercise/"];
     

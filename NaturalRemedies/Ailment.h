@@ -11,10 +11,9 @@
 @interface Ailment : NSObject
 
 @property (nonatomic, retain) NSString *ailmentName;
-@property (nonatomic, retain) NSString *ailmentDescription;
 @property (nonatomic, retain) NSString *ailmentImage;
 @property (nonatomic, retain) NSMutableArray <Remedy *> *remedyList;
 
-- (id) initWithName:(NSString*)ailmentName andDescription: (NSString*)ailmentDescription andImage:(NSString*)ailmentImage;
+- (id) initWithName:(NSString*)ailmentName andImage:(NSString*)ailmentImage;
 
 @end

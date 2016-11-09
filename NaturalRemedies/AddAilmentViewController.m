@@ -14,20 +14,51 @@
 
 @implementation AddAilmentViewController
 
+#pragma mark - View Methods
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.dao = [DAO sharedManager];
-    // Do any additional setup after loading the view from its nib.
-    UIBarButtonItem *addAilment = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemSave target:self action:@selector(saveAilment:)];
     
-    self.navigationItem.rightBarButtonItem = addAilment;
+    UIBarButtonItem *saveAilment = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemSave target:self action:@selector(saveAilment:)];
+    
+    self.navigationItem.rightBarButtonItem = saveAilment;
+}
+
+- (void ) viewWillAppear:(BOOL)animated {
+    
+    if (self.detailIsInEditMode == YES) {
+        // in edit mode
+        self.ailmentName.text = self.ailment.ailmentName;
+        self.deleteButton.hidden = NO;
+    }
+    // in add mode
+    else {
+        self.deleteButton.hidden = YES;
+    }
+}
+
+
+#pragma mark - Button Tapped
+
+- (IBAction)deleteButtonTapped:(UIButton *)sender {
+    [self.dao.ailmentList removeObject: self.ailment];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)saveAilment: (id*)sender {
-    Ailment *ailmentToAdd = [[Ailment alloc] initWithName:self.ailmentName.text andDescription:@"" andImage:@"defaultAddAilmentImage.jpg"];
-    [self.dao.ailmentList addObject:ailmentToAdd];
-    
+    // update ailment
+    if (self.detailIsInEditMode == YES) {
+        self.ailment.ailmentName = self.ailmentName.text;
+        [self.navigationController  popViewControllerAnimated:YES];
+    }
+    // add new ailment
+    else {
+        Ailment *ailmentToAdd = [[Ailment alloc] initWithName:self.ailmentName.text andImage:@"defaultAddAilmentImage.jpg"];
+        [self.dao.ailmentList addObject:ailmentToAdd];
+        self.detailIsInEditMode = NO;
+    }
     [self.navigationController  popViewControllerAnimated:YES];
 }
 

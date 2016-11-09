@@ -12,11 +12,10 @@
 @implementation Ailment
 
 
-- (id) initWithName:(NSString*)ailmentName andDescription: (NSString*)ailmentDescription andImage:(NSString*)ailmentImage {
+- (id) initWithName:(NSString*)ailmentName andImage:(NSString*)ailmentImage {
 self = [super init];
     if (self) {
         self.ailmentName = ailmentName;
-        self.ailmentDescription = ailmentDescription;
         self.ailmentImage = ailmentImage;
         self.remedyList = [[NSMutableArray alloc] init];
     }
@@ -24,7 +23,7 @@ self = [super init];
 }
 
 - (NSString * ) description {
-    return [NSString stringWithFormat:@"ailment: %@ - %@", self.ailmentName, self.ailmentDescription ];
+    return [NSString stringWithFormat:@"%@", self.ailmentName];
 }
 
 @end

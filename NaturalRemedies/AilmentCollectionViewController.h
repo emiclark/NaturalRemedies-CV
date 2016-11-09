@@ -16,13 +16,16 @@
 @interface AilmentCollectionViewController : UICollectionViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, retain) DAO *dao;
-@property (strong, nonatomic) IBOutlet UICollectionView *ailmentCV;
+@property (nonatomic, strong) IBOutlet UICollectionView *ailmentCV;
+@property (nonatomic, strong) UIBarButtonItem *editButton;
 @property (nonatomic, strong) CollectionViewCellA *myCell;
 @property (nonatomic, strong) NSMutableArray<CollectionViewCellA *> *ailmentCells;
-
 @property (nonatomic, strong) AddAilmentViewController *addAilmentVC;
 
-- (void) DeleteButtonTapped: (id*) sender;
+@property (nonatomic)         BOOL inEditMode;
+
+
+- (void) editButtonTapped: (id*) sender;
 - (void) addButtonTapped: (id*)sender;
 
 @end

@@ -16,8 +16,11 @@
 @interface AddAilmentViewController : UIViewController
 
 @property (nonatomic, retain) DAO *dao;
+@property (nonatomic, strong) Ailment *ailment;
 @property (nonatomic, weak) IBOutlet UITextField *ailmentName;
-@property (nonatomic, weak) AilmentCollectionViewController *ailmentCVC;
+@property (nonatomic, strong) AilmentCollectionViewController *ailmentCVC;
+@property (weak, nonatomic) IBOutlet UIButton *deleteButton;
+@property (nonatomic ) BOOL detailIsInEditMode;
 
 - (void)saveAilment: (id*)sender;
 

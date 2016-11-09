@@ -10,12 +10,12 @@
 
 @interface AilmentCollectionViewController ()
 
-
+#define SCARLET [UIColor colorWithRed:207.0/255.0 green:47.0/255.0 blue:40.0/255.0 alpha:1];
+#define SYSBLUE [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
 @end
 
 @implementation AilmentCollectionViewController
 
-UIBarButtonItem *editButton;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,45 +31,50 @@ UIBarButtonItem *editButton;
     [self.ailmentCV registerNib:[UINib nibWithNibName:@"CollectionViewCellA" bundle:nil] forCellWithReuseIdentifier: @"myCell"];
     
     // add edit Button
-    editButton = [[UIBarButtonItem alloc] initWithTitle:@"Delete" style:UIBarButtonItemStylePlain target:self action: @selector(DeleteButtonTapped:)];
+    self.editButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target: self action: @selector(editButtonTapped:)];
     
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonTapped:)];
-    self.navigationItem.rightBarButtonItems = @[addButton, editButton];
     
-    // hide delete button icon
-    [self setEditing:NO];
+    self.navigationItem.rightBarButtonItems = @[ addButton, self.editButton];
+    
+    // set booleans for in editing mode
+    self.inEditMode = NO;
+    
 }
 
-- (void) addButtonTapped: (id*)sender {
-    self.addAilmentVC = [[AddAilmentViewController alloc] initWithNibName:@"AddAilmentViewController" bundle:nil];
-    [self.navigationController pushViewController:self.addAilmentVC animated:YES];
-}
 
 - (void) viewWillAppear:(BOOL)animated  {
+    
+    self.inEditMode = self.addAilmentVC.detailIsInEditMode;
+    self.editButton.tintColor = SYSBLUE;
+    [self setEditing:NO];
     [self.ailmentCV reloadData];
 }
 
-- (void) DeleteButtonTapped: (id*) sender {
+- (void) addButtonTapped: (id*)sender {
+    self.inEditMode = NO;
+    self.addAilmentVC.detailIsInEditMode = self.inEditMode;
 
-    // In edit mode: change Edit button -> Done
+    self.addAilmentVC = [[AddAilmentViewController alloc] initWithNibName:@"AddAilmentViewController" bundle:nil];
+    self.addAilmentVC.title = [NSString stringWithFormat: @"Add New Ailment"];
+    [self.navigationController pushViewController:self.addAilmentVC animated:YES];
+}
+
+
+- (void) editButtonTapped: (id*) sender {
+    
+    // turn off edit mode
     if (self.editing == YES) {
+        self.inEditMode = NO;
         [self setEditing:NO];
-        editButton.title = @"Delete";
-        for (CollectionViewCellA *cell in self.ailmentCells) {
-            cell.deleteButton.hidden = YES;
-        }
+        self.editButton.tintColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
     }
-    // Finished edit mode: Change Done button -> Edit
+    // turn on edit mode
     else {
-        for (CollectionViewCellA *cell in self.ailmentCells) {
-            cell.deleteButton.hidden = NO;
-        }
-        editButton.title = @"Done";
         [self setEditing:YES];
-
+        self.inEditMode = YES;
+        self.editButton.tintColor = [UIColor blueColor];
     }
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -121,13 +126,24 @@ UIBarButtonItem *editButton;
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    // is in delete mode
-    if (self.isEditing) {
-        [self.dao.ailmentList removeObjectAtIndex:indexPath.row];
-        [self.ailmentCV reloadData];
-        [self setEditing: NO];
-        editButton.title = @"Delete";
+//    self.addAilmentVC = [[AddAilmentViewController alloc]init];
+//    self.addAilmentVC.detailIsInEditMode = self.inEditMode;
+    
+    // is in edit mode
+    if (self.inEditMode == YES) {
+        self.editButton.tintColor = [UIColor darkGrayColor];
+        self.addAilmentVC = [[AddAilmentViewController alloc] initWithNibName:@"AddAilmentViewController" bundle:nil];
+        self.addAilmentVC.title = [NSString stringWithFormat: @"Update %@", [self.dao.ailmentList objectAtIndex:indexPath.row]];
+        
+        self.addAilmentVC.detailIsInEditMode = self.inEditMode;
+        
+        self.addAilmentVC.ailment = [self.dao.ailmentList objectAtIndex:indexPath.row];
+        self.addAilmentVC.detailIsInEditMode = self.inEditMode;
+//        NSLog(@"%@",self.addAilmentVC.ailment);
+        [self.navigationController pushViewController:self.addAilmentVC animated:YES];
     }
+//    self.addAilmentVC.detailIsInEditMode = self.inEditMode;
+
 }
 
 // Uncomment this method to specify if the specified item should be highlighted during tracking

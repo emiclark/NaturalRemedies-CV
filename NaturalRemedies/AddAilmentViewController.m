@@ -62,6 +62,7 @@
     [self.navigationController  popViewControllerAnimated:YES];
 }
 
+#pragma mark - Misc Methods
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

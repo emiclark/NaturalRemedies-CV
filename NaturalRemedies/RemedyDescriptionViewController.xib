@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RemedyDescriptionViewController">
+            <connections>
+                <outlet property="remedyDescription" destination="n5g-me-PtJ" id="auc-IG-S95"/>
+                <outlet property="remedyImage" destination="VAh-Ot-zYy" id="rQZ-XT-Pfg"/>
+                <outlet property="remedyName" destination="Hv1-1q-5tl" id="vel-ZD-IvU"/>
+                <outlet property="remedyType" destination="dYn-B5-IOY" id="5Rp-Ge-LUK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remedy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv1-1q-5tl">
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remedy Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYn-B5-IOY">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RemedyImage" translatesAutoresizingMaskIntoConstraints="NO" id="VAh-Ot-zYy">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="7j7-d8-Er0"/>
+                        <constraint firstAttribute="height" constant="25" id="Qwg-sI-fR3"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n5g-me-PtJ">
+                    <color key="backgroundColor" red="0.97971235560000003" green="0.96127624112100396" blue="0.84218641408819284" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="scrollIndicatorInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.97971235560000003" green="0.89401634939999997" blue="0.72949969579999996" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="dYn-B5-IOY" firstAttribute="leading" secondItem="VAh-Ot-zYy" secondAttribute="trailing" constant="16" id="19X-HQ-Hnc"/>
+                <constraint firstItem="VAh-Ot-zYy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="116" id="AnT-sc-GhF"/>
+                <constraint firstAttribute="bottom" secondItem="n5g-me-PtJ" secondAttribute="bottom" constant="20" id="Cqo-il-lrD"/>
+                <constraint firstAttribute="trailing" secondItem="n5g-me-PtJ" secondAttribute="trailing" constant="16" id="E94-dy-hCs"/>
+                <constraint firstItem="VAh-Ot-zYy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="29" id="F8m-Av-6bw"/>
+                <constraint firstItem="Hv1-1q-5tl" firstAttribute="leading" secondItem="VAh-Ot-zYy" secondAttribute="trailing" constant="16" id="IQF-Bh-rxy"/>
+                <constraint firstAttribute="trailing" secondItem="Hv1-1q-5tl" secondAttribute="trailing" constant="25" id="Ldl-SQ-jYL"/>
+                <constraint firstAttribute="trailing" secondItem="dYn-B5-IOY" secondAttribute="trailing" constant="25" id="aZK-jf-kQi"/>
+                <constraint firstItem="n5g-me-PtJ" firstAttribute="top" secondItem="dYn-B5-IOY" secondAttribute="bottom" constant="37" id="gIy-1t-uNO"/>
+                <constraint firstItem="n5g-me-PtJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="k1a-dL-p02"/>
+                <constraint firstItem="dYn-B5-IOY" firstAttribute="top" secondItem="Hv1-1q-5tl" secondAttribute="bottom" id="vIu-jF-xFG"/>
+                <constraint firstItem="Hv1-1q-5tl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="109" id="vg4-2d-lWZ"/>
+            </constraints>
+            <point key="canvasLocation" x="49.5" y="-27.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RemedyImage" width="16" height="16"/>
+    </resources>
+</document>

@@ -10,17 +10,21 @@
 #import "DAO.h"
 #import "CollectionViewCellA.h"
 #import "AddAilmentViewController.h"
+#import "RemedyCollectionViewController.h"
 
 @class AddAilmentViewController;
+@class RemedyCollectionViewController;
 
 @interface AilmentCollectionViewController : UICollectionViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, retain) DAO *dao;
 @property (nonatomic, strong) IBOutlet UICollectionView *ailmentCV;
-@property (nonatomic, strong) UIBarButtonItem *editButton;
+
 @property (nonatomic, strong) CollectionViewCellA *myCell;
 @property (nonatomic, strong) NSMutableArray<CollectionViewCellA *> *ailmentCells;
+
 @property (nonatomic, strong) AddAilmentViewController *addAilmentVC;
+@property (nonatomic, strong) RemedyCollectionViewController *remedyCVC;
 
 @property (nonatomic)         BOOL inEditMode;
 

@@ -26,19 +26,19 @@
         <scene sceneID="wzM-p7-aXY">
             <objects>
                 <collectionViewController title="Natural Remedies" id="epc-ce-aIw" customClass="AilmentCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="interactive" dataMode="prototypes" id="84g-zT-5cM">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" dataMode="prototypes" id="84g-zT-5cM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="nak-ak-UC6">
                             <size key="itemSize" width="300" height="210"/>
-                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="sgn-66-mpo" customClass="CollectionViewCellA">
-                                <rect key="frame" x="33" y="50" width="310" height="175"/>
+                                <rect key="frame" x="32.5" y="0.0" width="310" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="310" height="175"/>
@@ -48,10 +48,6 @@
                                 <size key="customSize" width="310" height="175"/>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YXN-ae-SHS">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="epc-ce-aIw" id="Q3i-9E-R46"/>
                             <outlet property="delegate" destination="epc-ce-aIw" id="ssn-Jr-GVx"/>

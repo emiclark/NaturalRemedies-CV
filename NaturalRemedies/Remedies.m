@@ -22,8 +22,4 @@
     return  self;
 }
 
-- (NSString *) description {
-    return [NSString stringWithFormat:@"remedy: %@ - %@, %@, %@",self.remedyName, self.remedyDescription, self.remedyType, self.remedyURL];
-}
-
 @end

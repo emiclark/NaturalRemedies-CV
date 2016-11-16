@@ -10,11 +10,13 @@
 
 @interface AilmentCollectionViewController ()
 
-#define SCARLET [UIColor colorWithRed:207.0/255.0 green:47.0/255.0 blue:40.0/255.0 alpha:1];
+#define IN_EDIT_MODE [UIColor colorWithRed:150.0/255.0 green:0.0/255.0 blue:250.0/255.0 alpha:1];
 #define SYSBLUE [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
+
 @end
 
 @implementation AilmentCollectionViewController
+static  UIBarButtonItem *editButton;
 
 
 - (void)viewDidLoad {
@@ -31,22 +33,24 @@
     [self.ailmentCV registerNib:[UINib nibWithNibName:@"CollectionViewCellA" bundle:nil] forCellWithReuseIdentifier: @"myCell"];
     
     // add edit Button
-    self.editButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target: self action: @selector(editButtonTapped:)];
+    editButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target: self action: @selector(editButtonTapped:)];
     
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonTapped:)];
     
-    self.navigationItem.rightBarButtonItems = @[ addButton, self.editButton];
+    self.navigationItem.rightBarButtonItems = @[ addButton, editButton];
     
-    // set booleans for in editing mode
+    // initially not editing mode
     self.inEditMode = NO;
+    self.editing = NO;
     
 }
 
 
 - (void) viewWillAppear:(BOOL)animated  {
-    
-    self.inEditMode = self.addAilmentVC.detailIsInEditMode;
-    self.editButton.tintColor = SYSBLUE;
+    self.inEditMode = NO;
+//    self.addAilmentVC.detailIsInEditMode = NO;
+    [self setEditing:NO];
+    editButton.tintColor = SYSBLUE;
     [self setEditing:NO];
     [self.ailmentCV reloadData];
 }
@@ -67,19 +71,15 @@
     if (self.editing == YES) {
         self.inEditMode = NO;
         [self setEditing:NO];
-        self.editButton.tintColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
+        editButton.tintColor = SYSBLUE;
+
     }
     // turn on edit mode
     else {
         [self setEditing:YES];
         self.inEditMode = YES;
-        self.editButton.tintColor = [UIColor blueColor];
+        editButton.tintColor = IN_EDIT_MODE;
     }
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*
@@ -126,23 +126,27 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-//    self.addAilmentVC = [[AddAilmentViewController alloc]init];
-//    self.addAilmentVC.detailIsInEditMode = self.inEditMode;
-    
     // is in edit mode
     if (self.inEditMode == YES) {
-        self.editButton.tintColor = [UIColor darkGrayColor];
+        editButton.tintColor = [UIColor darkGrayColor];
         self.addAilmentVC = [[AddAilmentViewController alloc] initWithNibName:@"AddAilmentViewController" bundle:nil];
         self.addAilmentVC.title = [NSString stringWithFormat: @"Update %@", [self.dao.ailmentList objectAtIndex:indexPath.row]];
         
+        // set addAilmentVC for edit mode
         self.addAilmentVC.detailIsInEditMode = self.inEditMode;
         
+        // set ailment to edit in addAilmentVC
         self.addAilmentVC.ailment = [self.dao.ailmentList objectAtIndex:indexPath.row];
-        self.addAilmentVC.detailIsInEditMode = self.inEditMode;
-//        NSLog(@"%@",self.addAilmentVC.ailment);
         [self.navigationController pushViewController:self.addAilmentVC animated:YES];
     }
-//    self.addAilmentVC.detailIsInEditMode = self.inEditMode;
+    // push remedyCVC
+    else {
+        self.remedyCVC = [[RemedyCollectionViewController alloc] initWithNibName:@"RemedyCollectionViewController" bundle:nil];
+        self.remedyCVC.inEditMode = NO;
+        self.remedyCVC.remedyList = [[self.dao.ailmentList objectAtIndex: indexPath.row] remedyList ];
+        self.remedyCVC.title = [NSString stringWithFormat:@"%@", [self.dao.ailmentList objectAtIndex: indexPath.row]];
+        [self.navigationController pushViewController:self.remedyCVC animated:YES];
+    }
 
 }
 
@@ -151,30 +155,10 @@
 	return YES;
 }
 
-
-
 // Uncomment this method to specify if the specified item should be selected
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
-
-
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
-
 
 
 - (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -194,4 +178,25 @@
      
 }
 
+/*
+ // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
+ - (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
+	return NO;
+ }
+ 
+ - (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+	return NO;
+ }
+ 
+ - (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+	
+ }
+ */
+
+#pragma mark - Misc Methods
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 @end

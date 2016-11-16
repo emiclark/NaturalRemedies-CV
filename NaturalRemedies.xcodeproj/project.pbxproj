@@ -7,7 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002677B91DD4C1C000425C1C /* AddRemedyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002677B71DD4C1C000425C1C /* AddRemedyViewController.m */; };
+		002677BA1DD4C1C000425C1C /* AddRemedyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002677B81DD4C1C000425C1C /* AddRemedyViewController.xib */; };
+		002677BF1DD4EEF200425C1C /* RemedyWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002677BD1DD4EEF200425C1C /* RemedyWebViewController.m */; };
+		002677C01DD4EEF200425C1C /* RemedyWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002677BE1DD4EEF200425C1C /* RemedyWebViewController.xib */; };
 		0052E75A1DD1436400864C8E /* defaultAddAilmentImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0052E7591DD1436400864C8E /* defaultAddAilmentImage.jpg */; };
+		009CC52F1DD3906200B341C4 /* RemedyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009CC52D1DD3906200B341C4 /* RemedyCollectionViewController.m */; };
+		009CC5301DD3906200B341C4 /* RemedyCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009CC52E1DD3906200B341C4 /* RemedyCollectionViewController.xib */; };
+		009CC5351DD3944E00B341C4 /* CollectionViewCellB.m in Sources */ = {isa = PBXBuildFile; fileRef = 009CC5331DD3944E00B341C4 /* CollectionViewCellB.m */; };
+		009CC5361DD3944E00B341C4 /* CollectionViewCellB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009CC5341DD3944E00B341C4 /* CollectionViewCellB.xib */; };
+		009CC53C1DD39E1800B341C4 /* herb.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CC5381DD39E1800B341C4 /* herb.png */; };
+		009CC53D1DD39E1800B341C4 /* capsule.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CC5391DD39E1800B341C4 /* capsule.png */; };
+		009CC53E1DD39E1800B341C4 /* yoga.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CC53A1DD39E1800B341C4 /* yoga.png */; };
+		009CC53F1DD39E1800B341C4 /* meditation.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CC53B1DD39E1800B341C4 /* meditation.png */; };
+		00B0ED2E1DD8B842001393B3 /* RemedyDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0ED2C1DD8B842001393B3 /* RemedyDescriptionViewController.m */; };
+		00B0ED2F1DD8B842001393B3 /* RemedyDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00B0ED2D1DD8B842001393B3 /* RemedyDescriptionViewController.xib */; };
 		00D58D061DCFA933009D386B /* CollectionViewCellA.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D58D041DCFA933009D386B /* CollectionViewCellA.m */; };
 		00D58D071DCFA933009D386B /* CollectionViewCellA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D58D051DCFA933009D386B /* CollectionViewCellA.xib */; };
 		00D58D111DD13B67009D386B /* AddAilmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D58D0F1DD13B67009D386B /* AddAilmentViewController.m */; };
@@ -28,7 +42,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002677B61DD4C1C000425C1C /* AddRemedyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddRemedyViewController.h; path = NaturalRemedies/AddRemedyViewController.h; sourceTree = "<group>"; };
+		002677B71DD4C1C000425C1C /* AddRemedyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddRemedyViewController.m; path = NaturalRemedies/AddRemedyViewController.m; sourceTree = "<group>"; };
+		002677B81DD4C1C000425C1C /* AddRemedyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddRemedyViewController.xib; path = NaturalRemedies/AddRemedyViewController.xib; sourceTree = "<group>"; };
+		002677BC1DD4EEF200425C1C /* RemedyWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemedyWebViewController.h; path = NaturalRemedies/RemedyWebViewController.h; sourceTree = "<group>"; };
+		002677BD1DD4EEF200425C1C /* RemedyWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemedyWebViewController.m; path = NaturalRemedies/RemedyWebViewController.m; sourceTree = "<group>"; };
+		002677BE1DD4EEF200425C1C /* RemedyWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RemedyWebViewController.xib; path = NaturalRemedies/RemedyWebViewController.xib; sourceTree = "<group>"; };
 		0052E7591DD1436400864C8E /* defaultAddAilmentImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultAddAilmentImage.jpg; sourceTree = "<group>"; };
+		009CC52C1DD3906200B341C4 /* RemedyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemedyCollectionViewController.h; path = NaturalRemedies/RemedyCollectionViewController.h; sourceTree = "<group>"; };
+		009CC52D1DD3906200B341C4 /* RemedyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemedyCollectionViewController.m; path = NaturalRemedies/RemedyCollectionViewController.m; sourceTree = "<group>"; };
+		009CC52E1DD3906200B341C4 /* RemedyCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RemedyCollectionViewController.xib; path = NaturalRemedies/RemedyCollectionViewController.xib; sourceTree = "<group>"; };
+		009CC5321DD3944E00B341C4 /* CollectionViewCellB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewCellB.h; path = NaturalRemedies/CollectionViewCellB.h; sourceTree = "<group>"; };
+		009CC5331DD3944E00B341C4 /* CollectionViewCellB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewCellB.m; path = NaturalRemedies/CollectionViewCellB.m; sourceTree = "<group>"; };
+		009CC5341DD3944E00B341C4 /* CollectionViewCellB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewCellB.xib; path = NaturalRemedies/CollectionViewCellB.xib; sourceTree = "<group>"; };
+		009CC5381DD39E1800B341C4 /* herb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = herb.png; sourceTree = "<group>"; };
+		009CC5391DD39E1800B341C4 /* capsule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capsule.png; sourceTree = "<group>"; };
+		009CC53A1DD39E1800B341C4 /* yoga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yoga.png; sourceTree = "<group>"; };
+		009CC53B1DD39E1800B341C4 /* meditation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meditation.png; sourceTree = "<group>"; };
+		00B0ED2B1DD8B842001393B3 /* RemedyDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemedyDescriptionViewController.h; path = NaturalRemedies/RemedyDescriptionViewController.h; sourceTree = "<group>"; };
+		00B0ED2C1DD8B842001393B3 /* RemedyDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemedyDescriptionViewController.m; path = NaturalRemedies/RemedyDescriptionViewController.m; sourceTree = "<group>"; };
+		00B0ED2D1DD8B842001393B3 /* RemedyDescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RemedyDescriptionViewController.xib; path = NaturalRemedies/RemedyDescriptionViewController.xib; sourceTree = "<group>"; };
 		00D58D031DCFA933009D386B /* CollectionViewCellA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCellA.h; sourceTree = "<group>"; };
 		00D58D041DCFA933009D386B /* CollectionViewCellA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCellA.m; sourceTree = "<group>"; };
 		00D58D051DCFA933009D386B /* CollectionViewCellA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCellA.xib; sourceTree = "<group>"; };
@@ -68,6 +101,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002677BB1DD4C1C400425C1C /* AddRemedyVC */ = {
+			isa = PBXGroup;
+			children = (
+				002677B61DD4C1C000425C1C /* AddRemedyViewController.h */,
+				002677B71DD4C1C000425C1C /* AddRemedyViewController.m */,
+				002677B81DD4C1C000425C1C /* AddRemedyViewController.xib */,
+			);
+			name = AddRemedyVC;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		002677C11DD4EEF700425C1C /* RemedyWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				002677BC1DD4EEF200425C1C /* RemedyWebViewController.h */,
+				002677BD1DD4EEF200425C1C /* RemedyWebViewController.m */,
+				002677BE1DD4EEF200425C1C /* RemedyWebViewController.xib */,
+			);
+			name = RemedyWebViewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		009CC5311DD3906800B341C4 /* RemedyCVC */ = {
+			isa = PBXGroup;
+			children = (
+				009CC52C1DD3906200B341C4 /* RemedyCollectionViewController.h */,
+				009CC52D1DD3906200B341C4 /* RemedyCollectionViewController.m */,
+				009CC52E1DD3906200B341C4 /* RemedyCollectionViewController.xib */,
+			);
+			name = RemedyCVC;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		009CC5371DD3945400B341C4 /* CollectionViewCellB */ = {
+			isa = PBXGroup;
+			children = (
+				009CC5321DD3944E00B341C4 /* CollectionViewCellB.h */,
+				009CC5331DD3944E00B341C4 /* CollectionViewCellB.m */,
+				009CC5341DD3944E00B341C4 /* CollectionViewCellB.xib */,
+			);
+			name = CollectionViewCellB;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		00B0ED301DD8B846001393B3 /* RemedyDescriptionVC */ = {
+			isa = PBXGroup;
+			children = (
+				00B0ED2B1DD8B842001393B3 /* RemedyDescriptionViewController.h */,
+				00B0ED2C1DD8B842001393B3 /* RemedyDescriptionViewController.m */,
+				00B0ED2D1DD8B842001393B3 /* RemedyDescriptionViewController.xib */,
+			);
+			name = RemedyDescriptionVC;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		00D58D131DD13B77009D386B /* AddAilmentVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,10 +191,15 @@
 				AAEF40B71DCD206B00B462FA /* Main.storyboard */,
 				AAEF40DF1DCD2EB500B462FA /* DAO */,
 				AAEF40E31DCD2EFF00B462FA /* Ailment */,
-				AAEF40E71DCD2F4600B462FA /* Remedy */,
+				AAEF40E71DCD2F4600B462FA /* Remedies */,
 				AAEF40CD1DCD22BF00B462FA /* CollectionViewCell-A */,
+				009CC5371DD3945400B341C4 /* CollectionViewCellB */,
 				AAEF40DB1DCD2E2F00B462FA /* AilmentCVC */,
 				00D58D131DD13B77009D386B /* AddAilmentVC */,
+				009CC5311DD3906800B341C4 /* RemedyCVC */,
+				00B0ED301DD8B846001393B3 /* RemedyDescriptionVC */,
+				002677BB1DD4C1C400425C1C /* AddRemedyVC */,
+				002677C11DD4EEF700425C1C /* RemedyWebViewController */,
 				AAEF40BA1DCD206B00B462FA /* Assets.xcassets */,
 				AAEF40D71DCD2BB500B462FA /* images */,
 				AAEF40BC1DCD206B00B462FA /* LaunchScreen.storyboard */,
@@ -137,6 +230,10 @@
 		AAEF40D71DCD2BB500B462FA /* images */ = {
 			isa = PBXGroup;
 			children = (
+				009CC5381DD39E1800B341C4 /* herb.png */,
+				009CC5391DD39E1800B341C4 /* capsule.png */,
+				009CC53A1DD39E1800B341C4 /* yoga.png */,
+				009CC53B1DD39E1800B341C4 /* meditation.png */,
 				0052E7591DD1436400864C8E /* defaultAddAilmentImage.jpg */,
 				AAEF40CF1DCD2BA800B462FA /* deleteIcon.png */,
 				AAEF40D01DCD2BA800B462FA /* studyIcon.jpg */,
@@ -176,13 +273,13 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		AAEF40E71DCD2F4600B462FA /* Remedy */ = {
+		AAEF40E71DCD2F4600B462FA /* Remedies */ = {
 			isa = PBXGroup;
 			children = (
 				AAEF40E41DCD2F3400B462FA /* Remedies.h */,
 				AAEF40E51DCD2F3400B462FA /* Remedies.m */,
 			);
-			name = Remedy;
+			name = Remedies;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -217,7 +314,7 @@
 				TargetAttributes = {
 					AAEF40AA1DCD206B00B462FA = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 6F8P242K3J;
+						DevelopmentTeam = X9KW2SQ39Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -248,13 +345,22 @@
 				AAEF40D51DCD2BA800B462FA /* sleepIcon.jpg in Resources */,
 				AAEF40BE1DCD206B00B462FA /* LaunchScreen.storyboard in Resources */,
 				AAEF40BB1DCD206B00B462FA /* Assets.xcassets in Resources */,
+				002677C01DD4EEF200425C1C /* RemedyWebViewController.xib in Resources */,
+				009CC53C1DD39E1800B341C4 /* herb.png in Resources */,
 				AAEF40D61DCD2BA800B462FA /* stressReduction.jpg in Resources */,
+				009CC53D1DD39E1800B341C4 /* capsule.png in Resources */,
 				0052E75A1DD1436400864C8E /* defaultAddAilmentImage.jpg in Resources */,
+				009CC5361DD3944E00B341C4 /* CollectionViewCellB.xib in Resources */,
 				AAEF40D31DCD2BA800B462FA /* deleteIcon.png in Resources */,
 				00D58D121DD13B67009D386B /* AddAilmentViewController.xib in Resources */,
 				AAEF40B91DCD206B00B462FA /* Main.storyboard in Resources */,
+				009CC53E1DD39E1800B341C4 /* yoga.png in Resources */,
+				002677BA1DD4C1C000425C1C /* AddRemedyViewController.xib in Resources */,
 				AAEF40D41DCD2BA800B462FA /* studyIcon.jpg in Resources */,
 				00D58D071DCFA933009D386B /* CollectionViewCellA.xib in Resources */,
+				00B0ED2F1DD8B842001393B3 /* RemedyDescriptionViewController.xib in Resources */,
+				009CC5301DD3906200B341C4 /* RemedyCollectionViewController.xib in Resources */,
+				009CC53F1DD39E1800B341C4 /* meditation.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +371,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B0ED2E1DD8B842001393B3 /* RemedyDescriptionViewController.m in Sources */,
 				00D58D061DCFA933009D386B /* CollectionViewCellA.m in Sources */,
 				AAEF40E21DCD2EFA00B462FA /* Ailment.m in Sources */,
 				AAEF40DE1DCD2EAF00B462FA /* DAO.m in Sources */,
 				AAEF40B31DCD206B00B462FA /* AppDelegate.m in Sources */,
 				AAEF40B01DCD206B00B462FA /* main.m in Sources */,
 				AAEF40E61DCD2F3400B462FA /* Remedies.m in Sources */,
+				009CC52F1DD3906200B341C4 /* RemedyCollectionViewController.m in Sources */,
 				AAEF40DA1DCD2E2A00B462FA /* AilmentCollectionViewController.m in Sources */,
 				00D58D111DD13B67009D386B /* AddAilmentViewController.m in Sources */,
+				009CC5351DD3944E00B341C4 /* CollectionViewCellB.m in Sources */,
+				002677B91DD4C1C000425C1C /* AddRemedyViewController.m in Sources */,
+				002677BF1DD4EEF200425C1C /* RemedyWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,11 +503,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6F8P242K3J;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = X9KW2SQ39Q;
 				INFOPLIST_FILE = NaturalRemedies/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.turntotech.tutorial.NaturalRemediesCV;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.turntotech.tutorial.NaturalRemedies-CV";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -405,11 +517,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6F8P242K3J;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = X9KW2SQ39Q;
 				INFOPLIST_FILE = NaturalRemedies/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.turntotech.tutorial.NaturalRemediesCV;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.turntotech.tutorial.NaturalRemedies-CV";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
